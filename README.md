@@ -1,4 +1,4 @@
-# Download workflow artifact GitHub Action
+# Download workflow artifact GitHub Action by Juan-VG
 
 An action that downloads and extracts uploaded artifacts associated with a given workflow and commit or other criteria.
 
