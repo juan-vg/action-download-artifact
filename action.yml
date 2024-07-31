@@ -1,9 +1,9 @@
-name: Download workflow artifact
+name: Download workflow artifact by Juan-VG
 description: Download and extract an artifact associated with given workflow and commit or other criteria
-author: dawidd6
+author: Juan-VG
 branding:
-  icon: download
-  color: blue
+  icon: 'git-pull-request'
+  color: 'green'
 inputs:
   github_token:
     description: GitHub token
