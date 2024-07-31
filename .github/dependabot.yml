@@ -4,10 +4,11 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "04:00"
+    time: "00:00"
+    timezone: Etc/UTC
   pull-request-branch-name:
     separator: "-"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 5
   ignore:
   - dependency-name: filesize
     versions:
@@ -20,7 +21,8 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "04:00"
+    time: "00:00"
+    timezone: Etc/UTC
   pull-request-branch-name:
     separator: "-"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 5

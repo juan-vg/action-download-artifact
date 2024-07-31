@@ -4,6 +4,17 @@ An action that downloads and extracts uploaded artifacts associated with a given
 
 Let's suppose you have a workflow with a job in it that at the end uploads an artifact using `actions/upload-artifact` action and you want to download this artifact in another workflow that is run after the first one. Official `actions/download-artifact` does not allow this. That's why I decided to create this action. By knowing only the workflow name and commit SHA or other details, you can download the previously uploaded artifact from different workflow associated with that commit or other criteria and use it.
 
+
+> This project was forked from <https://github.com/dawidd6/action-download-artifact> project, originally created by [dawidd6](https://github.com/dawidd6).
+
+## Github Token Permissions
+
+This action requires the following permissions:
+
+```yaml
+actions: read
+```
+
 ## Usage
 
 > If `commit` or `pr` or `branch` or `run_id` or `workflow_conclusion` is not specified then the artifact from the most recent successfully completed workflow run will be downloaded.
@@ -13,7 +24,7 @@ Let's suppose you have a workflow with a job in it that at the end uploads an ar
 ```yaml
 - name: Download artifact
   id: download-artifact
-  uses: dawidd6/action-download-artifact@v6
+  uses: juan-vg/action-download-artifact@v6
   with:
     # Optional, GitHub token, a Personal Access Token with `public_repo` scope if needed
     # Required, if the artifact is from a different repo
